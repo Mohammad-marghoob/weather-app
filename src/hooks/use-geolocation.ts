@@ -58,8 +58,8 @@ export function useGeolocation() {
             //Had to improvise because of the sanctions >(googleapis = 403)
             setLocationData({
               coordinates: {
-                lat: 29.638656,
-                lon: 52.4910592,
+                lat: 29.6036,
+                lon: 52.5388,
               },
               error: null,
               isLoading: false,
