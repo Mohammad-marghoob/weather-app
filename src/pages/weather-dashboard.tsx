@@ -11,6 +11,7 @@ import {
 import CurrentWeather from "@/components/current-weather";
 import HourlyTemperature from "@/components/hourly-temperature";
 import WeatherDetails from "@/components/weather-details";
+import WeatherForcast from "@/components/weather-forcast";
 
 const WeatherDashboard = () => {
   const {
@@ -121,11 +122,11 @@ const WeatherDashboard = () => {
         </div>
       </div>
 
-      <div>
-        {/* detailer */}
+      <div className="grid gap-6 md:grid-cols-2 items-start">
         <WeatherDetails data={weatherQuery.data} />
 
         {/* forcast */}
+        <WeatherForcast data={forecastQuery.data} />
       </div>
       <div></div>
     </div>
